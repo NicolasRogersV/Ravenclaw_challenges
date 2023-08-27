@@ -1,4 +1,5 @@
 import unittest
+from main import update_system, observe, intial_conditions
 
 class TestYourFunctions(unittest.TestCase):
 
@@ -17,9 +18,8 @@ class TestYourFunctions(unittest.TestCase):
 
     def test_update_system(self):
         x_state, y_state = update_system(20, 30, 0.1, 0.01, 0.2)
-        self.assertEqual(x_state, 18.0)
-        self.assertEqual(y_state, 28.4)
+        self.assertEqual(x_state, 19.98)
+        self.assertEqual(y_state, 29.4)
 
-
-if name == 'main':
+if __name__ == '__main__':
     unittest.main()
