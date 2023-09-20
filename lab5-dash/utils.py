@@ -22,7 +22,6 @@ def get_country_coords(country_name, output_as=" boundingbox "):
         output = [float(i) for i in lst]
     return output
 
-
 def raw_processor(data_raw: pd . DataFrame):
     data_raw["Training Start "] = pd . to_datetime(data_raw["Training Start "])
     data_raw["Training Start_date "] = data_raw["Training Start "]. dt . date
